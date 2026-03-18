@@ -116,7 +116,7 @@ if st.button("🚀 Run simulation"):
     col1.metric("Max height", f"{max_height:.2f} m")
     col2.metric("Total time", f"{total_time:.2f} s")
 
-    st.write("Bounce heights:", np.round(highest_points, 3))
+    st.write("Highest points:", np.round(highest_points, 3))
 
     # ------------------ GRAPH ------------------
     fig, ax = plt.subplots()
