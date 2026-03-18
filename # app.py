@@ -6,11 +6,11 @@ import streamlit as st
 st.set_page_config(page_title="Ball Simulator", layout="centered")
 
 st.title("⚽ Bouncing Ball Simulator")
-st.markdown("**Met dit programma kan je zien hoe een bal op de grond stuitert als functie van de overdruk in de bal. 
+st.markdown("Met dit programma kan je zien hoe een bal op de grond stuitert als functie van de overdruk in de bal. 
 Dit programma is gemaakt op basis van echte metingen en houdt rekening met luchtweerstand. 
 Dit programma is alleen realistisch als de bal langs de z-as beweegt en niet langs de x-as of y-as. 
 Mocht je vragen hebben of de code erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com
-**")
+")
 
 # ------------------ UI ------------------
 ball_type = st.selectbox(
