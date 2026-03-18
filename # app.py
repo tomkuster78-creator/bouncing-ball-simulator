@@ -14,7 +14,7 @@ ball_type = st.selectbox(
     ["Volleyball 🏐", "Basketball 🏀", "Football ⚽"]
 )
 
-overpressure = st.slider("Overpressure (bar)", 0.1, 5.0, 0.5)
+overpressure = st.slider("Overpressure (bar)", 0.1, 4.0, 0.5)
 H = st.slider("Drop height (m)", 0.5, 5.0, 1.0)
 bounces = st.slider("Number of bounces", 1, 10, 3)
 
