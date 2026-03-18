@@ -15,7 +15,7 @@ ball_type = st.selectbox(
 )
 
 overpressure = st.slider("Overpressure (bar)", 0.1, 5.0, 0.5)
-H = input("Drop height in meter (use point for decimals", )
+H = input("Drop height in meter (use point for decimals ")
 bounces = st.slider("Number of bounces", 1, 10, 3)
 
 # ------------------ BALL SETTINGS ------------------
