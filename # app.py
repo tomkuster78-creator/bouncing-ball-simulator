@@ -9,7 +9,7 @@ st.title("⚽ Bouncing Ball Simulator")
 st.markdown("Met dit programma kan je zien hoe een bal op de grond stuitert als functie van de overdruk in de bal.") 
 st.markdown("Dit programma is gebaseerd op echte metingen op linoleum en houdt rekening met luchtweerstand.") 
 st.markdown("Dit programma is alleen realistisch als de bal langs de z-as beweegt en niet langs de x-as of y-as.") 
-st.markdown("De aanbevolen overdruk in een voetbal is 0.8 bar, in een basketbal 0.55 bar en in een volleybal 0.3 bar")
+st.markdown("De aanbevolen overdruk in een voetbal is 0.8 bar, in een basketbal 0.55 bar en in een volleybal 0.3 bar. De ballen zijn niet harder opgepompt dan 1.74 bar")
 st.markdown("Mocht je vragen hebben of de code erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com")
 
 # ------------------ UI ------------------
@@ -116,7 +116,7 @@ if st.button("🚀 Run simulation"):
     col1.metric("Max height", f"{max_height:.2f} m")
     col2.metric("Total time", f"{total_time:.2f} s")
 
-    st.write("Highest points:", np.round(highest_points, 3), 'm')
+    st.write("Highest points (m):", np.round(highest_points, 3))
 
     # ------------------ GRAPH ------------------
     fig, ax = plt.subplots()
