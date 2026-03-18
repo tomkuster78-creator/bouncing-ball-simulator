@@ -8,7 +8,7 @@ st.set_page_config(page_title="Ball Simulator", layout="centered")
 st.title("⚽ Bouncing Ball Simulator")
 st.markdown("Met dit programma kan je zien hoe een bal op de grond stuitert als functie van de overdruk in de bal.") 
 st.markdown("Dit programma is gebaseerd op echte metingen op linoleum en houdt rekening met luchtweerstand.") 
-st.markdown("Dit programma is alleen realistisch als de bal langs de z-as beweegt en niet langs de x-as of y-as.") 
+st.markdown("Dit programma is alleen realistisch als de bal op dezelfde plek blijft stuiteren") 
 st.markdown("De aanbevolen overdruk in een voetbal is 0.8 bar, in een basketbal 0.55 bar en in een volleybal 0.3 bar. De ballen zijn niet harder opgepompt dan 1.74 bar")
 st.markdown("Mocht je vragen hebben of de code/wiskunde erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com")
 
