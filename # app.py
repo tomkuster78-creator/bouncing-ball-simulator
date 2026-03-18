@@ -122,6 +122,12 @@ if st.button("🚀 Run simulation"):
     ax.set_ylabel("Height (m)")
     st.pyplot(fig)
 
+    fig, ax = plt.subplots()
+    ax.plot(timepoints, velocities, color=color)
+    ax.set_title("Ball velocity")
+    ax.set_xlabel("Time (s)")
+    ax.set_ylabel("Velocity (m/s)")
+    st.pyplot(fig)
     # ------------------ SMOOTH ANIMATION ------------------
     st.subheader("🎥 Live animation")
 
