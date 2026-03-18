@@ -116,39 +116,17 @@ if st.button("🚀 Run simulation"):
 
     # ------------------ GRAPH ------------------
     fig, ax = plt.subplots()
-    ax.plot(timepoints, heights, color=color)
+    ax.plot(timepoints, heights, '.', color=color)
     ax.set_title("Ball trajectory")
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("Height (m)")
     st.pyplot(fig)
 
     fig, ax = plt.subplots()
-    ax.plot(timepoints, velocities, color=color)
+    ax.plot(timepoints, velocities, '.', color=color)
     ax.set_title("Ball velocity")
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("Velocity (m/s)")
     st.pyplot(fig)
     # ------------------ SMOOTH ANIMATION ------------------
-    st.subheader("🎥 Live animation")
 
-    heights_smooth = np.interp(
-        np.linspace(0, len(heights), len(heights)*3),
-        np.arange(len(heights)),
-        heights
-    )
-
-    fig_anim, ax_anim = plt.subplots(figsize=(3,5))
-    ball, = ax_anim.plot([], [], 'o', markersize=20, color=color)
-
-    ax_anim.set_xlim(0, 1)
-    ax_anim.set_ylim(0, max(heights)*1.2)
-    ax_anim.axhline(0)
-
-    ax_anim.set_xticks([])
-    ax_anim.set_ylabel("Height (m)")
-
-    placeholder = st.pyplot(fig_anim)
-
-    for h in heights_smooth:
-        ball.set_data([0.5], [h])
-        placeholder.pyplot(fig_anim)
