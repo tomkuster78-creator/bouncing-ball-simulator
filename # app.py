@@ -9,7 +9,7 @@ st.title("⚽ Bouncing Ball Simulator")
 st.markdown("Met dit programma kan je zien hoe een bal op de grond stuitert met een zelf gekozen overdruk.") 
 st.markdown("Dit programma is gebaseerd op echte metingen op linoleum en houdt rekening met luchtweerstand.") 
 st.markdown("Dit programma is alleen realistisch als de bal op dezelfde plek blijft stuiteren.") 
-st.markdown("De aanbevolen overdruk in een voetbal, basketbal en volleybal is respectievelijk 0.8, 0.55 en 0.3 bar. Om explosies te voorkomen, zijn de ballen in ons experiment niet harder opgepompt dan 1.74 bar")
+st.markdown("De aanbevolen overdruk in een voetbal, basketbal en volleybal zijn respectievelijk 0.8, 0.55 en 0.3 bar. Om explosies te voorkomen, zijn de ballen in ons experiment niet harder opgepompt dan 1.74 bar")
 st.markdown("Mocht je vragen hebben of de code/wiskunde erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com")
 
 # ------------------ UI ------------------
