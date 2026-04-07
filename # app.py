@@ -10,6 +10,7 @@ st.markdown("Met dit programma kan je zien hoe een bal op de grond stuitert met 
 st.markdown("Dit programma is gebaseerd op echte metingen op linoleum en houdt rekening met luchtweerstand.") 
 st.markdown("Dit programma is alleen realistisch als de bal op dezelfde plek blijft stuiteren.") 
 st.markdown("De aanbevolen overdruk in een voetbal, basketbal en volleybal zijn respectievelijk 0.8, 0.55 en 0.3 bar. Om explosies te voorkomen, zijn de ballen in ons experiment niet harder opgepompt dan 1.74 bar")
+st.markdown("De dichtheid van de lucht is op zeeniveau ongeveer 1.2 kg/m^3")
 st.markdown("Mocht je vragen hebben of de code/wiskunde erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com")
 
 # ------------------ UI ------------------
@@ -18,10 +19,11 @@ ball_type = st.selectbox(
     ["Volleyball 🏐", "Basketball 🏀", "Football ⚽"]
 )
 
-rho_air = st.slider("Air density (kg/m^3)", 0, 5, 1.2, "at sealevel, the air density is approximately 1.2 kg/m^3")
-overpressure = st.slider("Overpressure (bar)", 0.1, 4.0, 0.5)
-H = st.number_input("Drop height (m):", value=1.0)
-bounces = st.slider("Number of bounces", 1, 10, 3)
+rho_air         = st.slider("Air density (kg/m^3)", 0, 5, 1.2)
+g               = st.slider("Gravitational acceleration", 1, 40, 9.81)
+overpressure    = st.slider("Overpressure (bar)", 0.1, 4.0, 0.5)
+H               = st.number_input("Drop height (m):", value=1.0)
+bounces         = st.slider("Number of bounces", 1, 10, 3)
 
 
 # ------------------ BALL SETTINGS ------------------
@@ -41,11 +43,10 @@ else:
     m, circ, B, C, D = 0.42953, 0.677, 0.08746166, -0.0115714, 0.8928571
 
 # ------------------ PHYSICS ------------------
-g = 9.81
+
 cw_bal = 0.47
 r_ball = circ / (2 * np.pi)
 A_ball = np.pi * r_ball**2
-rho_air = 1.2
 
 k = 0.5 * cw_bal * A_ball * rho_air
 F_z = m * g
