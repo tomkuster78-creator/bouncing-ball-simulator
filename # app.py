@@ -18,6 +18,7 @@ ball_type = st.selectbox(
     ["Volleyball 🏐", "Basketball 🏀", "Football ⚽"]
 )
 
+rho_air = st.slider("Air density (kg/m^3)", 0, 5, 1.2, "at sealevel, the air density is approximately 1.2 kg/m^3")
 overpressure = st.slider("Overpressure (bar)", 0.1, 4.0, 0.5)
 H = st.number_input("Drop height (m):", value=1.0)
 bounces = st.slider("Number of bounces", 1, 10, 3)
