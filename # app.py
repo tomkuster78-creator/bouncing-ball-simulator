@@ -21,7 +21,7 @@ ball_type = st.selectbox(
 )
 
 rho_air         = st.slider("Air density (kg/m^3)", 0.0, 5.0, 1.2)
-g               = st.slider("Gravitational acceleration", 1.0, 40.0, 9.81)
+g               = st.slider("Gravitational acceleration (m/s^2)", 1.0, 40.0, 9.81)
 overpressure    = st.slider("Overpressure (bar)", 0.1, 4.0, 0.5)
 H               = st.slider("Drop height (m):", 0.1, 100.0, 1.0)
 bounces         = st.slider("Number of bounces", 1, 10, 3)
