@@ -124,7 +124,7 @@ if st.button("🚀 Run simulation"):
     # ------------------ GRAPH ------------------
     fig, ax = plt.subplots()
     ax.plot(timepoints, heights, '.', color=color)
-    ax.set_title("Ball trajectory")
+    ax.set_title("Ball height")
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("Height (m)")
     st.pyplot(fig)
