@@ -11,7 +11,7 @@ st.markdown("Dit programma is gebaseerd op echte metingen op linoleum en houdt r
 st.markdown("Dit programma is alleen realistisch als de bal op dezelfde plek blijft stuiteren.") 
 st.markdown("De aanbevolen overdruk in een voetbal, basketbal en volleybal zijn respectievelijk 0.8, 0.55 en 0.3 bar. Om explosies te voorkomen, zijn de ballen in ons experiment niet harder opgepompt dan 1.74 bar")
 st.markdown("De dichtheid van de lucht is op zeeniveau ongeveer 1.2 kg/m^3")
-st.markdown("DE CODE WERKT NOG NIET BIJ EEN LUCHTDICHTHEID VAN 0. Hoewel de wiskunde dan een stuk makkelijker is, krijg je een 0/0 probleem als je dezelfde formules gebruikt waarbij er wel rekening moet worden gehouden met luchtweerstand. Dit moet nog even worden opgelost door bij een aantal formules een if-statement te maken, dat als de luchtdichtheid 0 is, een andere (makkelijkere) berekening  moet worden uitgevoerd waarbij er de luchtweerstand geen rol speelt. Ik voer dit door als ik er tijd voor heb")
+st.markdown("DE CODE WERKT NOG NIET BIJ EEN LUCHTDICHTHEID VAN 0. Hoewel de wiskunde dan een stuk makkelijker is, krijg je een 0/0 probleem als je dezelfde formules gebruikt waarbij er wel rekening wordt gehouden met luchtweerstand. Dit moet nog even worden opgelost door bij een aantal formules een if-statement te maken, dat als de luchtdichtheid 0 is, een andere (makkelijkere) berekening  moet worden uitgevoerd waarbij er de luchtweerstand geen rol speelt. Ik voer dit door als ik er tijd voor heb")
 st.markdown("Mocht je vragen hebben of de code/wiskunde erachter willen zien, stuur dan een mailtje naar tomkuster78@gmail.com")
 
 # ------------------ UI ------------------
