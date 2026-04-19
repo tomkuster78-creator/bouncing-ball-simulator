@@ -143,7 +143,7 @@ placeholder = st.empty()
 
 fig, ax = plt.subplots()
 
-for i in range(0, len(timepoints), 3):
+for i in range(0, len(timepoints) - 1, 3):
 
     ax.clear()
 
