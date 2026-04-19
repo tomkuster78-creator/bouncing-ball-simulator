@@ -113,6 +113,7 @@ if st.button("🚀 Run simulation"):
     # ------------------ RESULTS ------------------
     st.subheader("📊 Results")
 
+    time_points = timepoints
     max_height = np.max(highest_points)
     total_time = timepoints[-1]
 
