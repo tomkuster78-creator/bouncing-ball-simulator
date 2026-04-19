@@ -137,31 +137,4 @@ if st.button("🚀 Run simulation"):
     ax.set_ylabel("Velocity (m/s)")
     st.pyplot(fig)
     # ------------------ SMOOTH ANIMATION ------------------
-st.subheader("🎬 Ball animation")
 
-placeholder = st.empty()
-
-fig, ax = plt.subplots()
-
-for i in range(0, len(timepoints), 3):
-
-    ax.clear()
-
-    # vaste assen
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(0, max(heights) * 1.2)
-
-    # grond
-    ax.axhline(0)
-
-    # bal tekenen
-    ax.scatter(0, heights[i], s=800, color=color)
-
-    # optioneel: geen assen (mooier)
-    ax.set_xticks([])
-    ax.set_yticks([])
-
-    ax.set_title("Bouncing ball")
-
-    placeholder.pyplot(fig)
-    time.sleep(0.01)
