@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
-
+import time
 
 st.set_page_config(page_title="Ball Simulator", layout="centered")
 
@@ -113,7 +113,6 @@ if st.button("🚀 Run simulation"):
     # ------------------ RESULTS ------------------
     st.subheader("📊 Results")
 
-    time_points = timepoints
     max_height = np.max(highest_points)
     total_time = timepoints[-1]
 
@@ -144,7 +143,7 @@ placeholder = st.empty()
 
 fig, ax = plt.subplots()
 
-for i in range(0, len(timepoints) - 1, 3):
+for i in range(0, len(timepoints), 3):
 
     ax.clear()
 
